@@ -1,18 +1,29 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    {{ info }}
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
-  }
+    // HelloWorld,
+  },
+  data() {
+    return {
+      info: "Pancho",
+    };
+  },
+  mounted() {
+    this.$axios
+      // .get("https://jsonplaceholder.typicode.com/users")
+      .get("https://s3.amazonaws.com/technical-challenge/v3/contacts.json")
+      .then((response) => (this.info = response));
+  },
 };
 </script>
 
