@@ -1,24 +1,20 @@
-# kc_challenge
+# Kin + Carta
 
-## Project setup
-```
-npm install
-```
+## Web Programming Challenge
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Tools
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Vue
+- Tailwind
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Step-by-step Setup
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+// Install Dependencies
+npm i
+// Serve Dev Build
+npm start
+// Will run at:
+// http://localhost:8080/     => on local
+// http://192.168.0.171:8080/ => on network
+```
